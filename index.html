@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Customer Support Chatbot</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+
+    <div class="header">
+    🤖 Customer Support Bot
+    <span class="status">🟢 Online</span>
+    </div>
+    <div id="chat-box">
+        <div class="bot-message">
+            👋 Welcome to ABC Store Support!
+            <br><br>
+            Click a service below or type your question.
+        </div>
+    </div>
+
+    <div class="quick-buttons">
+        <button onclick="quickReply('track order')">📦 Track Order</button>
+        <button onclick="quickReply('return policy')">🔄 Return Policy</button>
+        <button onclick="quickReply('product information')">💻 Products</button>
+        <button onclick="quickReply('payment issue')">💳 Payment</button>
+        <button onclick="quickReply('contact support')">📞 Contact</button>
+        <button onclick="quickReply('business hours')">🕘 Hours</button>
+    </div>
+
+    <div class="input-area">
+        <input type="text" id="userInput" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
